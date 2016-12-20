@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html>
 
@@ -39,22 +39,20 @@
                 <div class="col-md-4 column">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <div class="well" style="height:140px;text-align:center">
-                                <img src="img/445259.jpg" class="img-thumbnail" width="150"/>
+                            <div class="well" style="height: 140px; text-align: center">
+                                <img src="img/445259.jpg" class="img-thumbnail" width="150" />
                             </div>
-                            <div class="well" style="height:285px;">
+                            <div class="well" style="height: 285px;">
                                 <ul>
-                                    <li>
-                                        tese1
+                                    <li>tese1
                                     </li>
-                                    <li>
-                                        test2
+                                    <li>test2
                                     </li>
                                 </ul>
                             </div>
                         </div>
-        </div>
-        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </form>
