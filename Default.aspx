@@ -56,6 +56,7 @@
             </div>
         </div>
     </form>
+    <script src="dist/js/websocket.js"></script>
     <script src="dist/js/jquery-3.1.1.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 </body>
