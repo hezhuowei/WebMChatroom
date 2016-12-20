@@ -26,15 +26,15 @@
                             </div>
                         </div>
                     </div>
-                    <form role="form">
+                    
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control"/>
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">发送</button>
                             </span>
                         </div>
 
-                    </form>
+                   
                 </div>
                 <div class="col-md-4 column">
                     <div class="panel panel-default">
