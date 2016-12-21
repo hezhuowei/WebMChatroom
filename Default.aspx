@@ -18,7 +18,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="well">
-                                        <div class="text-info" id="chatlog" style="height: 350px; overflow: auto;">
+                                        <div id="chat_log" class="text-info" id="chatlog" style="height: 350px; overflow: auto;">
                                             <p class="text_error">test</p>
                                         </div>
                                     </div>
@@ -28,9 +28,9 @@
                     </div>
                     
                         <div class="input-group">
-                            <input type="text" class="form-control"/>
+                            <input id="user_input" type="text" class="form-control" value=""/>
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">发送</button>
+                                <button onclick="sendgmsg()" class="btn btn-default" type="button">发送</button>
                             </span>
                         </div>
 

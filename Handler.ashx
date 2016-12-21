@@ -4,8 +4,8 @@ using System;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.WebSockets;
-    using Microsoft.Web.WebSockets;
-    
+using Microsoft.Web.WebSockets;
+
 public class Handler : IHttpHandler
 {
 
@@ -24,24 +24,24 @@ public class Handler : IHttpHandler
             return false;
         }
     }
-        public class MyWebsocket:WebSocketHandler
-{
-    public override void OnOpen()
+    public class MyWebsocket:WebSocketHandler
     {
-        this.Send("成功连接聊天室");
+        public override void OnOpen()
+        {
+            base.OnOpen();
+        }
+        public override void OnClose()
+        {
+            base.OnClose();
+        }
+        public override void OnError()
+        {
+            base.OnError();
+        }
+        public override void OnMessage(string message)
+        {
+            this.Send(message);
+        }
     }
-    public override void OnClose()
-    {
-        base.OnClose();
-    }
-    public override void OnError()
-    {
-        base.OnError();
-    }
-    public override void OnMessage(string message)
-    {
-        this.Send("你发送了："+message);
-    }
-}
 
 }
