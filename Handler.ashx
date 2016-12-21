@@ -26,6 +26,7 @@ public class Handler : IHttpHandler
     }
     public class MyWebsocket:WebSocketHandler
     {
+        private static WebSocketCollection myWSC = new WebSocketCollection();
         public override void OnOpen()
         {
             base.OnOpen();
@@ -40,8 +41,11 @@ public class Handler : IHttpHandler
         }
         public override void OnMessage(string message)
         {
-            this.Send(message);
+            myWSC.Add(this);
+            myWSC.Broadcast(message);
+
         }
     }
+
 
 }

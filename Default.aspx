@@ -18,8 +18,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="well">
-                                        <div id="chat_log" class="text-info" id="chatlog" style="height: 350px; overflow: auto;">
-                                            <p class="text_error">test</p>
+                                        <div id="chat_log" class="text-info" style="height: 350px; overflow: auto;scroll">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -28,7 +28,8 @@
                     </div>
                     
                         <div class="input-group">
-                            <input id="user_input" type="text" class="form-control" value=""/>
+                            <input type="text" style="display:none" />
+                            <input id="user_input" type="text" class="form-control" value="" onkeyup="key()"/>
                             <span class="input-group-btn">
                                 <button onclick="sendgmsg()" class="btn btn-default" type="button">发送</button>
                             </span>
@@ -59,5 +60,10 @@
     <script src="dist/js/websocket.js"></script>
     <script src="dist/js/jquery-3.1.1.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <script>function key()
+{
+    if (event.keyCode == 13) { sendgmsg(); }
+}
+    </script>
 </body>
 </html>
