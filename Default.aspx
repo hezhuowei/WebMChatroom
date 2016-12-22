@@ -6,7 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -57,9 +57,9 @@
             </div>
         </div>
     </form>
-    <script src="dist/js/websocket.js"></script>
-    <script src="dist/js/jquery-3.1.1.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/websocket.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>function key()
 {
     if (event.keyCode == 13) { sendgmsg(); }
